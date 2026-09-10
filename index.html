@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daily Expense Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h2>💰 Daily Expense Tracker</h2>
+
+<input type="date" id="date">
+<input type="number" id="amount" placeholder="Amount (Rp)">
+
+<select id="category">
+<option>Food</option>
+<option>Transport</option>
+<option>Shopping</option>
+<option>Bills</option>
+<option>Health</option>
+<option>Entertainment</option>
+<option>Other</option>
+</select>
+
+<textarea id="notes" placeholder="Notes"></textarea>
+
+<button onclick="saveExpense()">Save Expense</button>
+
+<h3>History</h3>
+<input type="month" id="monthFilter" onchange="filterHistory()">
+<div id="history"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
